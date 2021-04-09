@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>信息登记</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script type="text/javascript" src="https://imgcache.qq.com/qcloud/cloudbase-js-sdk/1.5.0/cloudbase.full.js"></script>
+  <script type="text/javascript" src="./sms.js"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div id="model">
+    <div class="title">CVCS活动预约登记</div>
+    <div class="item">
+      <div>真实姓名</div>
+      <input type="text" id="name"/>
+    </div>
+    <div class="item">
+      <div>手机号码</div>
+      <input type="tel" id="phone" />
+    </div>
+    <div class="item">
+      <div>验证号码</div>
+      <input type="number" id="code" />
+      <button id="send_btn" onclick="sendSMS()">发送验证码</button>
+    </div>
+    <button id="submit" onclick="submit()">提交预约</button>
+  </div>
+  <div id="tips" style="display: none;">你已经预约成功<br>请耐心等待最新的通知</div>
+</body>
+<script type="text/javascript" src="./index.js?2021"></script>
+</html>
